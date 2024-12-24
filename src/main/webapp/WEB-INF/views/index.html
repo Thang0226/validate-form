@@ -13,36 +13,37 @@
                 <td><label for="firstName">First Name: </label></td>
                 <td>
                     <input type="text" id="firstName" th:field="*{firstName}"/>
-                    <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
                 </td>
+                <td><span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span></td>
             </tr>
             <tr>
                 <td><label for="lastName">Last Name: </label></td>
                 <td>
                     <input type="text" id="lastName" th:field="*{lastName}"/>
-                    <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
+                </td>
+                <td><span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
                 </td>
             </tr>
             <tr>
                 <td><label for="email">Email: </label></td>
                 <td>
                     <input type="text" id="email" th:field="*{email}"/>
-                    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
                 </td>
+                <td><span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></td>
             </tr>
             <tr>
                 <td><label for="age">Age: </label></td>
                 <td>
                     <input type="number" id="age" th:field="*{age}"/>
-                    <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span>
                 </td>
+                <td><span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></td>
             </tr>
             <tr>
                 <td><label for="phoneNumber">Phone Number: </label></td>
                 <td>
                     <input type="text" id="phoneNumber" th:field="*{phoneNumber}"/>
-                    <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
                 </td>
+                <td><span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span></td>
             </tr>
             <tr>
                 <td></td>
